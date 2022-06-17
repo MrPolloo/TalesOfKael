@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2103438436499823442}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FirePoint (1)
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2103438436869469711}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FirePoint (4)
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -71,7 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2103438437003472623}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FirePoint (2)
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -102,7 +102,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2103438437088069717}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FirePoint (6)
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -133,7 +133,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2103438437093377759}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -197,7 +197,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2103438437331781323}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FirePoint (5)
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -268,7 +268,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2103438437407261251}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FirePoint (7)
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -299,7 +299,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2103438438099212466}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FirePoint (3)
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -330,7 +330,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2103438438346305776}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FirePoint (8)
   m_TagString: Untagged
   m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
@@ -376,7 +376,7 @@ GameObject:
   - component: {fileID: 2293871206923743870}
   - component: {fileID: 2293871206923743864}
   - component: {fileID: 2293871206923743871}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Boss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -392,7 +392,7 @@ Transform:
   m_GameObject: {fileID: 2293871206923744135}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 7.47, y: -1.28, z: 0}
-  m_LocalScale: {x: -3, y: 3, z: 1}
+  m_LocalScale: {x: -2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2103438437093377759}
@@ -538,7 +538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae776ef7fb190534dbfbb90484a1a9db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 500
+  health: 100
   isInvulnerable: 0
   components:
   - {fileID: 2293871206923743856}
@@ -582,8 +582,9 @@ MonoBehaviour:
   - {fileID: 2103438436951137458}
   layer:
     serializedVersion: 2
-    m_Bits: 1
-  distanceCollider: 0.55
+    m_Bits: 1152
+  range: 5
+  distanceCollider: 0.4
   boxCollider: {fileID: 2293871206923743860}
 --- !u!114 &2293871206923743868
 MonoBehaviour:
@@ -603,8 +604,9 @@ MonoBehaviour:
   - {fileID: 6535822947971885826}
   layer:
     serializedVersion: 2
-    m_Bits: 1
-  distanceCollider: 0.55
+    m_Bits: 1152
+  range: 5
+  distanceCollider: 0.4
   boxCollider: {fileID: 2293871206923743860}
 --- !u!114 &2293871206923743859
 MonoBehaviour:
@@ -624,8 +626,9 @@ MonoBehaviour:
   - {fileID: 6535822947245264130}
   layer:
     serializedVersion: 2
-    m_Bits: 1
-  distanceCollider: 0.55
+    m_Bits: 1152
+  range: 5
+  distanceCollider: 0.4
   boxCollider: {fileID: 2293871206923743860}
 --- !u!114 &2293871206923743858
 MonoBehaviour:
@@ -645,8 +648,9 @@ MonoBehaviour:
   - {fileID: 6535822948385810148}
   layer:
     serializedVersion: 2
-    m_Bits: 1
-  distanceCollider: 0.55
+    m_Bits: 1152
+  range: 5
+  distanceCollider: 0.4
   boxCollider: {fileID: 2293871206923743860}
 --- !u!114 &2293871206923743857
 MonoBehaviour:
@@ -666,8 +670,9 @@ MonoBehaviour:
   - {fileID: 6535822946767808917}
   layer:
     serializedVersion: 2
-    m_Bits: 1
-  distanceCollider: 0.55
+    m_Bits: 1152
+  range: 5
+  distanceCollider: 0.4
   boxCollider: {fileID: 2293871206923743860}
 --- !u!114 &2293871206923743869
 MonoBehaviour:
@@ -687,8 +692,9 @@ MonoBehaviour:
   - {fileID: 7645892774224953645}
   layer:
     serializedVersion: 2
-    m_Bits: 1
-  distanceCollider: 0.55
+    m_Bits: 1152
+  range: 5
+  distanceCollider: 0.4
   boxCollider: {fileID: 2293871206923743860}
 --- !u!114 &2293871206923743870
 MonoBehaviour:

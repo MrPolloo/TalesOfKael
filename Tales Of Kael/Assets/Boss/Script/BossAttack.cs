@@ -13,8 +13,8 @@ public class BossAttack : MonoBehaviour
     [SerializeField] private Transform firepoint;
     [SerializeField] private GameObject[] fireballs;
     [SerializeField] private LayerMask layer;
-    private float range = 10f;
-    [SerializeField] private float distanceCollider = 0.55f;
+    [SerializeField] private float range;
+    [SerializeField] private float distanceCollider;
     [SerializeField] private BoxCollider2D boxCollider;
 
     // Start is called before the first frame update
@@ -26,16 +26,18 @@ public class BossAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(CheckPlayer())
+        if (CheckPlayer())
         {
-            if (cooldownTimer > attackCooldown)
+            cooldownTimer += Time.deltaTime;
+
+            if (cooldownTimer >= attackCooldown)
             {
+                cooldownTimer = 0;
                 anim.SetTrigger("Attack");
                 Attack();
             }
-            
         }
-        cooldownTimer += Time.deltaTime;
+        
     }
 
     private bool CheckPlayer()
@@ -55,7 +57,6 @@ public class BossAttack : MonoBehaviour
 
     private void Attack()
     {
-        cooldownTimer = 0;
         attackCooldown = 5;
         
         fireballs[CheckFireball()].transform.position = firepoint.position;

@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Void
   - NextLevel
+  - Boss
   layers:
   - Default
   - TransparentFX
