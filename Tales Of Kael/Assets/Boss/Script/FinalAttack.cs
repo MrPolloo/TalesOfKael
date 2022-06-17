@@ -28,7 +28,7 @@ public class FinalAttack : MonoBehaviour
 
     void Update()
     {
-        if (Health.health <= 100)
+        if (Health.health <= 20)
         {
             StartFinalAttack();
         }

@@ -36,6 +36,7 @@ public class Health : MonoBehaviour
     public void TakeDamage(float _damage)
     {
         currentHealth = Mathf.Clamp(currentHealth - (_damage - (_damage * (deffense / 100))), 0, startingHealth);
+        Debug.Log(currentHealth);
 
         if (currentHealth > 0)
         {

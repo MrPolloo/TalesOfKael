@@ -1520,6 +1520,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 2
+  deffense_timelife: 0
+  deffense: 0
 --- !u!95 &141886066
 Animator:
   serializedVersion: 4
@@ -2305,6 +2307,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 2
+  deffense_timelife: 0
+  deffense: 0
 --- !u!95 &209251578
 Animator:
   serializedVersion: 4
@@ -3454,8 +3458,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1676909377
+  m_SortingLayer: 4
   m_SortingOrder: 1
   m_Sprite: {fileID: 1506670206671948361, guid: e66e9d28d3616a04d8dc2ad1f380edf4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3476,7 +3480,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 336343311}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.16, y: -1.55, z: 0}
+  m_LocalPosition: {x: -7.7, y: -0.36, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3565,6 +3569,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 15
+  deffense_timelife: 0
+  deffense: 0
 --- !u!1 &359422284
 GameObject:
   m_ObjectHideFlags: 0
@@ -4113,6 +4119,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 7
+  deffense_timelife: 0
+  deffense: 0
 --- !u!50 &375998513
 Rigidbody2D:
   serializedVersion: 4
@@ -5895,6 +5903,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 5
+  deffense_timelife: 0
+  deffense: 0
 --- !u!95 &669697287
 Animator:
   serializedVersion: 4
@@ -6368,6 +6378,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 2
+  deffense_timelife: 0
+  deffense: 0
 --- !u!95 &694905872
 Animator:
   serializedVersion: 4
@@ -6742,6 +6754,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 5
+  deffense_timelife: 0
+  deffense: 0
 --- !u!95 &721592523
 Animator:
   serializedVersion: 4
@@ -7569,6 +7583,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 2
+  deffense_timelife: 0
+  deffense: 0
 --- !u!95 &820578702
 Animator:
   serializedVersion: 4
@@ -9715,6 +9731,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 5
+  deffense_timelife: 0
+  deffense: 0
 --- !u!95 &1207800150
 Animator:
   serializedVersion: 4
@@ -10401,6 +10419,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 2
+  deffense_timelife: 0
+  deffense: 0
 --- !u!95 &1356868533
 Animator:
   serializedVersion: 4
@@ -10989,6 +11009,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 2
+  deffense_timelife: 0
+  deffense: 0
 --- !u!95 &1460466682
 Animator:
   serializedVersion: 4
@@ -11320,6 +11342,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 7
+  deffense_timelife: 0
+  deffense: 0
 --- !u!50 &1506736302
 Rigidbody2D:
   serializedVersion: 4
@@ -11611,6 +11635,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 5
+  deffense_timelife: 0
+  deffense: 0
 --- !u!50 &1513713832
 Rigidbody2D:
   serializedVersion: 4
@@ -11998,6 +12024,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 7
+  deffense_timelife: 0
+  deffense: 0
 --- !u!50 &1611359932
 Rigidbody2D:
   serializedVersion: 4
@@ -12463,6 +12491,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 5
+  deffense_timelife: 0
+  deffense: 0
 --- !u!95 &1621382188
 Animator:
   serializedVersion: 4
@@ -12649,6 +12679,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 7
+  deffense_timelife: 0
+  deffense: 0
 --- !u!50 &1676897165
 Rigidbody2D:
   serializedVersion: 4
@@ -13476,6 +13508,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 2
+  deffense_timelife: 0
+  deffense: 0
 --- !u!95 &1750132352
 Animator:
   serializedVersion: 4
@@ -13662,6 +13696,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 7
+  deffense_timelife: 0
+  deffense: 0
 --- !u!50 &1771126217
 Rigidbody2D:
   serializedVersion: 4
@@ -14066,6 +14102,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 5
+  deffense_timelife: 0
+  deffense: 0
 --- !u!95 &1822746210
 Animator:
   serializedVersion: 4
@@ -15983,6 +16021,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 7
+  deffense_timelife: 0
+  deffense: 0
 --- !u!50 &1978581675
 Rigidbody2D:
   serializedVersion: 4
@@ -16223,6 +16263,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 5
+  deffense_timelife: 0
+  deffense: 0
 --- !u!95 &2016840537
 Animator:
   serializedVersion: 4
@@ -16845,6 +16887,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 7
+  deffense_timelife: 0
+  deffense: 0
 --- !u!50 &2040657600
 Rigidbody2D:
   serializedVersion: 4
@@ -17288,6 +17332,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 2
+  deffense_timelife: 0
+  deffense: 0
 --- !u!95 &2065625695
 Animator:
   serializedVersion: 4
@@ -17724,6 +17770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  damage: 0
 --- !u!212 &1853560521022255327
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17876,6 +17923,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  damage: 0
 --- !u!61 &1853560521214628938
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18028,6 +18076,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  damage: 0
 --- !u!1 &1853560521966285382
 GameObject:
   m_ObjectHideFlags: 0
@@ -18128,6 +18177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  damage: 0
 --- !u!61 &1853560521966285386
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18245,6 +18295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  damage: 0
 --- !u!1 &1977520668497676200
 GameObject:
   m_ObjectHideFlags: 0
@@ -18345,6 +18396,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  damage: 0
 --- !u!61 &1977520668506844274
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -18419,6 +18471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  damage: 0
 --- !u!212 &1977520669499763937
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18591,6 +18644,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  damage: 0
 --- !u!212 &2959262812090570855
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18909,7 +18963,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1734907527
   m_SortingLayer: 3
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -1267734913, guid: 1ae8dc79561d52541ab921b49be8c0a4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -18929,7 +18983,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6692266150063418051}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.47, y: -1.28, z: 0}
+  m_LocalPosition: {x: 7.47, y: -0.78, z: 0}
   m_LocalScale: {x: -2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -19313,6 +19367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  damage: 0
 --- !u!61 &6789784689393075706
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -19425,7 +19480,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6789784689766834404}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 107.52074, y: -1.9966019, z: 0}
+  m_LocalPosition: {x: 107.27074, y: -1.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

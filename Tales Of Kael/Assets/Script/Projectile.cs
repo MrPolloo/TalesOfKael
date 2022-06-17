@@ -46,6 +46,10 @@ public class Projectile : MonoBehaviour
         {
             collision.gameObject.GetComponent<Health>().TakeDamage(damage);
         }
+        if(collision.transform.tag == "Boss")
+        {
+            collision.gameObject.GetComponent<BossHealth>().TakeDamage(damage);
+        }
     }
 
     public void SetDirection(float projectile_direction)

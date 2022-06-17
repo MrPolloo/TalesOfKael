@@ -5,6 +5,7 @@ using UnityEngine;
 public class BossProjectile : MonoBehaviour
 {
     [SerializeField] private float speed;
+    public float damage;
     private float direction;
     private bool isHit;
     private Animator anim;
@@ -27,20 +28,20 @@ public class BossProjectile : MonoBehaviour
         transform.Translate(movementSpeed, 0, 0);
 
         projectile_lifetime += Time.deltaTime;
-        if(projectile_lifetime > 3)
+        if(projectile_lifetime > 2)
         {
             gameObject.SetActive(false);
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D coll)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         isHit = true;
         boxCollider.enabled = false;
         anim.SetTrigger("Explode");
-        if (coll.transform.tag == "Player")
+        if (collision.transform.tag == "Player")
         {
-            //coll.gameObject.GetComponent<Health>().TakeDamage(damage);
+            collision.gameObject.GetComponent<Health>().TakeDamage(damage);
         }
     }
 

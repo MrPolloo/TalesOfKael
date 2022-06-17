@@ -25,6 +25,7 @@ public class PlayerAttack : MonoBehaviour
     private Animator anim;
     private PlayerMovement playerMovement;
     private Health enemyHealth;
+    private BossHealth bossHealth;
     private int damage;
 
     private void Awake() 
@@ -88,7 +89,15 @@ public class PlayerAttack : MonoBehaviour
 
         if(hit.collider != null)
         {
-            enemyHealth = hit.transform.GetComponent<Health>();
+            if(gameObject.transform.tag == "Boss")
+            {
+                bossHealth = hit.transform.GetComponent<BossHealth>();
+            }
+            else
+            {
+                enemyHealth = hit.transform.GetComponent<Health>();
+            }
+            
         }
         return hit.collider != null;
     }
@@ -103,11 +112,19 @@ public class PlayerAttack : MonoBehaviour
     {
         if(checkEnemy())
         {
-            if(enemyHealth.currentHealth>0)
+            if(gameObject.transform.tag == "Boss")
             {
-                enemyHealth.TakeDamage(damage);
-                Debug.Log(enemyHealth.currentHealth);
+                bossHealth.TakeDamage(damage);
             }
+            else
+            {
+                if(enemyHealth.currentHealth>0)
+                {
+                    enemyHealth.TakeDamage(damage);
+                    Debug.Log(enemyHealth.currentHealth);
+                }
+            }
+            
         }
     }
 
