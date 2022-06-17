@@ -12,7 +12,7 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private float distanceCollider;
     [SerializeField] private CapsuleCollider2D boxCollider;
     private float cooldownTimerAtt = Mathf.Infinity;
-
+    private float potionAttackTimelife;
     [Header("Fire Attack")]
     [SerializeField] private float fireCooldown;
     [SerializeField] public int fireDmg;
@@ -58,6 +58,11 @@ public class PlayerAttack : MonoBehaviour
         }
         cooldownTimerFire += Time.deltaTime;
         cooldownTimerAtt += Time.deltaTime;
+
+        if (potionAttackTimelife > 0)
+        {
+            potionAttackTimelife -= Time.deltaTime;
+        }
     }
 
     private void Fire()
@@ -116,5 +121,25 @@ public class PlayerAttack : MonoBehaviour
             }
         }
         return 0;
+    }
+
+
+    public void addAttackValue(int attack, float timelife)
+    {
+        attDmg = attDmg + (attDmg * (attack / 100));
+        potionAttackTimelife += timelife;
+    }
+
+    public void addPotionAttack(int attackValue, float attackDelay)
+    {
+        attDmg += attackValue;
+        attackCooldown -= attackDelay;
+
+    }
+
+    public void addAttackSpeed(float attackDelay)
+    {
+
+        attackCooldown -= attackCooldown;
     }
 }

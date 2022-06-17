@@ -5,6 +5,8 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [SerializeField] public float startingHealth;
+    [SerializeField] public float deffense_timelife;
+    [SerializeField] public float deffense;
     public float currentHealth { get; private set; }
     private Animator anim;
     // Start is called before the first frame update
@@ -16,6 +18,14 @@ public class Health : MonoBehaviour
 
     void Update()
     {
+        if (deffense_timelife > 0)
+        {
+            deffense_timelife -= Time.deltaTime;
+        }
+        else
+        {
+            deffense = 0;
+        }
         // if(Input.GetKeyDown(KeyCode.R))
         // {
         //     TakeDamage(1);
@@ -25,9 +35,9 @@ public class Health : MonoBehaviour
 
     public void TakeDamage(float _damage)
     {
-        currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
+        currentHealth = Mathf.Clamp(currentHealth - (_damage - (_damage * (deffense / 100))), 0, startingHealth);
 
-        if(currentHealth > 0)
+        if (currentHealth > 0)
         {
             anim.SetTrigger("hurt");
         }
@@ -69,5 +79,19 @@ public class Health : MonoBehaviour
         {
             over();
         }
-    }   
+    }
+
+
+    public void addHealth(float healthPercent)
+    {
+        currentHealth = currentHealth + ((healthPercent / 100) * startingHealth);
+
+       
+    }
+
+    public void addDeffense(float deffensePercent, float timelife)
+    {
+        deffense = deffensePercent;
+        deffense_timelife = timelife;
+    }
 }
