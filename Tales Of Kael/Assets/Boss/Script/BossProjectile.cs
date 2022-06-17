@@ -27,7 +27,7 @@ public class BossProjectile : MonoBehaviour
         transform.Translate(movementSpeed, 0, 0);
 
         projectile_lifetime += Time.deltaTime;
-        if(projectile_lifetime > 5)
+        if(projectile_lifetime > 3)
         {
             gameObject.SetActive(false);
         }
@@ -37,7 +37,11 @@ public class BossProjectile : MonoBehaviour
     {
         isHit = true;
         boxCollider.enabled = false;
-        //anim.SetTrigger("Explode");
+        anim.SetTrigger("Explode");
+        if (coll.transform.tag == "Player")
+        {
+            //coll.gameObject.GetComponent<Health>().TakeDamage(damage);
+        }
     }
 
     public void SetDirection(float projectileDirection)

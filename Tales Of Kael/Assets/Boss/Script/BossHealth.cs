@@ -19,17 +19,16 @@ public class BossHealth : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E))
+        /*if(Input.GetKeyDown(KeyCode.E))
         {
 			TakeDamage(100);
-        }
+        }*/
 
 	}
 
     public void TakeDamage(int damage)
 	{
-		/*if (isInvulnerable)
-			return;*/
+		
 
 		health -= damage;
 		
@@ -46,14 +45,15 @@ public class BossHealth : MonoBehaviour
             {
 				component.enabled = false;
             }
-			/*
-			if(GetComponent<Boss>() != null)
-            {
-				GetComponent<Boss>().enabled = false;
-			}*/
+			
 			
 		}
 
+	}
+
+	private void Deactivate()
+    {
+		gameObject.SetActive(false);
 	}
 
    

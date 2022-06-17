@@ -582,8 +582,9 @@ MonoBehaviour:
   - {fileID: 2103438436951137458}
   layer:
     serializedVersion: 2
-    m_Bits: 1
-  distanceCollider: 0.55
+    m_Bits: 128
+  range: 5
+  distanceCollider: 0.4
   boxCollider: {fileID: 2293871206923743860}
 --- !u!114 &2293871206923743868
 MonoBehaviour:
@@ -603,8 +604,9 @@ MonoBehaviour:
   - {fileID: 6535822947971885826}
   layer:
     serializedVersion: 2
-    m_Bits: 1
-  distanceCollider: 0.55
+    m_Bits: 128
+  range: 5
+  distanceCollider: 0.4
   boxCollider: {fileID: 2293871206923743860}
 --- !u!114 &2293871206923743859
 MonoBehaviour:
@@ -624,8 +626,9 @@ MonoBehaviour:
   - {fileID: 6535822947245264130}
   layer:
     serializedVersion: 2
-    m_Bits: 1
-  distanceCollider: 0.55
+    m_Bits: 128
+  range: 5
+  distanceCollider: 0.4
   boxCollider: {fileID: 2293871206923743860}
 --- !u!114 &2293871206923743858
 MonoBehaviour:
@@ -645,8 +648,9 @@ MonoBehaviour:
   - {fileID: 6535822948385810148}
   layer:
     serializedVersion: 2
-    m_Bits: 1
-  distanceCollider: 0.55
+    m_Bits: 128
+  range: 5
+  distanceCollider: 0.4
   boxCollider: {fileID: 2293871206923743860}
 --- !u!114 &2293871206923743857
 MonoBehaviour:
@@ -666,8 +670,9 @@ MonoBehaviour:
   - {fileID: 6535822946767808917}
   layer:
     serializedVersion: 2
-    m_Bits: 1
-  distanceCollider: 0.55
+    m_Bits: 128
+  range: 5
+  distanceCollider: 0.4
   boxCollider: {fileID: 2293871206923743860}
 --- !u!114 &2293871206923743869
 MonoBehaviour:
@@ -687,8 +692,9 @@ MonoBehaviour:
   - {fileID: 7645892774224953645}
   layer:
     serializedVersion: 2
-    m_Bits: 1
-  distanceCollider: 0.55
+    m_Bits: 128
+  range: 5
+  distanceCollider: 0.4
   boxCollider: {fileID: 2293871206923743860}
 --- !u!114 &2293871206923743870
 MonoBehaviour:
